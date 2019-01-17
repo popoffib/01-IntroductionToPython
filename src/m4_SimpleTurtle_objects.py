@@ -132,7 +132,7 @@ natasha.right(20)
 natasha.forward(100)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -156,6 +156,14 @@ natasha.forward(100)
 #   As always, test by running the module.
 #
 ###############################################################################
+izzy = rg.SimpleTurtle('turtle')
+izzy.pen = rg.Pen('blue', 20)
+izzy.speed = 7
+izzy.forward(100)
+izzy.right(90)
+izzy.forward(70)
+izzy.left(90)
+izzy.backward(250)
 
 ###############################################################################
 #
