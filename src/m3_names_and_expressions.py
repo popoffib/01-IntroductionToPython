@@ -43,7 +43,7 @@ print(4*math.cos(2))
 answer=4*math.cos(2)
 print(math.sqrt(answer+(41*88)))
 ###############################################################################
-# TODO: 4.
+# DONE: 4.
 #   Immediately below this _TODO_,
 #   write code that computes the square root of 2 in two ways:
 #     - By using the   math.sqrt   function.
@@ -51,7 +51,8 @@ print(math.sqrt(answer+(41*88)))
 #   Print both of the expressions that you write.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(math.sqrt(2))
+print(2**0.5)
 
 ###############################################################################
 # TODO: 5.
