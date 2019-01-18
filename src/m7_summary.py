@@ -43,3 +43,18 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+betty = rg.SimpleTurtle('turtle')
+betty.pen = rg.Pen('blue', 10)
+betty.left(90)
+betty.forward(200)
+betty.pen_up()
+
+betty.go_to(rg.Point(100, -40))
+betty.pen_down()
+betty.pen = rg.Pen('green', 10)
+betty.right(180)
+betty.forward(150)
+
+window.close_on_mouse_click()

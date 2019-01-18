@@ -57,3 +57,5 @@ for k in range(20):
     another_turtle.right(40)
     another_turtle.pen_down()
     size = size - 15
+
+window.close_on_mouse_click()
