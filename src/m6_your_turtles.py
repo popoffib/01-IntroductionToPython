@@ -28,3 +28,32 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow
+red_turtle = rg.SimpleTurtle('turtle')
+red_turtle.pen = rg.Pen('red', 5)
+red_turtle.speed = 10
+size = 150
+for k in range(10):
+    red_turtle.draw_circle(size)
+    red_turtle.pen_up()
+    red_turtle.right(45)
+    red_turtle.forward(10)
+    red_turtle.left(45)
+
+    red_turtle.pen_down()
+    size = size - 10
+
+another_turtle = rg.SimpleTurtle('turtle')
+another_turtle.pen = rg.Pen('purple', 3)
+another_turtle.pen_down()
+another_turtle.forward(10)
+size = 100
+for k in range(20):
+    another_turtle.draw_square(size)
+    another_turtle.pen_up()
+    another_turtle.left(30)
+    another_turtle.backward(20)
+    another_turtle.right(40)
+    another_turtle.pen_down()
+    size = size - 15
